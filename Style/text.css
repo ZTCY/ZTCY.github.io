@@ -1,0 +1,19 @@
+.Title_Intro{
+    font-family: "Inter";
+    text-align: center;
+    font-size: 48px;
+    margin-block-end: 24px;
+}
+
+.Title_Blue_Yan{
+    font-size: 54px;
+    color: oklch(0.546 0.245 262.881);
+}
+
+.Title_Gray_Intro{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    color: oklch(0.446 0.03 256.802);
+
+}

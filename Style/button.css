@@ -1,0 +1,39 @@
+.View_My_Work{
+    display: inline;
+    align-items: center;
+    background-color: rgb(59, 130, 246);
+    font-family: "Inter, sans-serif";
+    color: rgb(255, 255, 255);
+    border: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition-duration: 0.15s;
+    border-radius: 8px;
+}
+.View_My_Work:hover{
+    background-color: rgba(59, 130, 246, 0.8);
+}
+
+.Get_In_Touch{
+    display: inline;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-family: "Inter, sans-serif";
+    color: rgb(30, 41, 59);
+    border-width: 2px;
+    border-color: rgba(148, 163, 184, 0.3);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition-duration: 0.15s;
+    border-radius: 8px;
+}
+
+.Get_In_Touch:hover{
+    background-color: rgba(230, 230, 230, 0.8);
+}
