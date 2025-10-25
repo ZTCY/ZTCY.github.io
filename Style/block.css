@@ -1,6 +1,8 @@
 .Intro{
     align-items: center;
     text-align: center;
+    block-size: 1fr;
+    display: block;
 }
 
 .Intro_button{

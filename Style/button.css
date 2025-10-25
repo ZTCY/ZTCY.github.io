@@ -12,6 +12,7 @@
     padding-right: 16px;
     transition-duration: 0.15s;
     border-radius: 8px;
+    margin-right: 3px;
 }
 .View_My_Work:hover{
     background-color: rgba(59, 130, 246, 0.8);
@@ -32,6 +33,7 @@
     padding-right: 15px;
     transition-duration: 0.15s;
     border-radius: 8px;
+    margin-left: 3px;
 }
 
 .Get_In_Touch:hover{
