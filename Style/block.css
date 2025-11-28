@@ -1,11 +1,9 @@
 .Intro{
     align-items: center;
-    text-align: center;
-    block-size: 1fr;
-    display: block;
-}
-
-.Intro_button{
-    align-items: center;
-    display: inline;
+    text-align: center; 
+    min-height: 100vh; 
+    display: flex; /* Allow vertical centering */
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    padding: 0 16px;
 }

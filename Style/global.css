@@ -1,0 +1,12 @@
+body {
+    background-color: #ffffff; 
+    /* Apply a radial gradient for the center-glow effect */
+    background-image: radial-gradient(
+        circle at center,
+        #f8fbff 0%, /* Very light blue/off-white in the center */
+        #e3f2ff 50%, /* Slightly deeper light blue */
+        #ffffff 100% /* White on the edges */
+    );
+    /* Ensure the body covers the full height of the viewport */
+    min-height: 100vh;
+}

@@ -7,10 +7,11 @@
         <meta name="author" content="Zheng Tse Chi Yan">
 
         <!--Title and Icon-->
-        <title>Personal Website</title>
-        <link rel="icon" tpye="image/png" href="https://github.com/YasirZT/PersonalWebsite/blob/main/icon.png?raw=true"/>
+        <title>ZHENG TSE Chi Yan</title>
+        <link rel="icon" type="image/png" href="https://github.com/YasirZT/PersonalWebsite/blob/main/icon.png?raw=true"/>
         
         <!--CSS Load-->
+        <link rel="stylesheet" href="Style/global.css">
         <link rel="stylesheet" href="Style/text.css">
         <link rel="stylesheet" href="Style/button.css">
         <link rel="stylesheet" href="Style/block.css">
@@ -25,9 +26,9 @@
     <body>
         <!--Intro Block-->
         <div class="Intro">
-            <p class="Title_Intro">
+            <h1 class="Title_Intro">
                 Hi, I'm <span class="Title_Blue_Yan">Yan</span>
-            </p>
+            </h1>
             <p class="Title_Gray_Intro">
                 Passionate about exploring the latest technologies and solving problems. 
                 Currently pursuing my Bachelor's degree in Computer Science at the HKUST.
@@ -35,6 +36,25 @@
             <div class="Intro_button">
                 <button class="View_My_Work">View My Work</button>
                 <button class="Get_In_Touch">Get In Touch</button>
+            </div>
+            
+            <!--Social Media Button-->
+            <div class="Social_Links">
+                <a href="https://github.com/ZTCY" aria-label="GitHub Profile">
+                    <img src="/Component/github.svg" alt="GitHub Logo" class="Social_Icon_Image">
+                </a>
+                
+                <a href="https://www.linkedin.com/in/chi-yan-zheng-tse-94b821239/" aria-label="LinkedIn Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                
+                <a href="mailto:yanzt@novaforgehk.com" aria-label="Email Address">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
             </div>
         </div>
     </body>

@@ -1,8 +1,8 @@
 .View_My_Work{
-    display: inline;
+    display: inline-block; 
     align-items: center;
     background-color: rgb(59, 130, 246);
-    font-family: "Inter, sans-serif";
+    font-family: "Inter", sans-serif;
     color: rgb(255, 255, 255);
     border: 0px;
     padding-top: 8px;
@@ -19,10 +19,10 @@
 }
 
 .Get_In_Touch{
-    display: inline;
+    display: inline-block; 
     align-items: center;
     background-color: rgb(255, 255, 255);
-    font-family: "Inter, sans-serif";
+    font-family: "Inter", sans-serif; 
     color: rgb(30, 41, 59);
     border-width: 2px;
     border-color: rgba(148, 163, 184, 0.3);
@@ -38,4 +38,48 @@
 
 .Get_In_Touch:hover{
     background-color: rgba(230, 230, 230, 0.8);
+}
+
+/* Social Icon Styles */
+
+.Social_Links {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 25px;
+    padding: 0;
+}
+
+.Social_Links a {
+    /* Base color for inline SVGs (LinkedIn, Email) */
+    color: rgb(100, 116, 139); 
+    text-decoration: none;
+    transition: color 0.15s ease-in-out; 
+    cursor: pointer; 
+}
+
+/* Only affect the svg*/
+.Social_Links a svg,
+.Social_Links a .Social_Icon_Image {
+    width: 24px; 
+    height: 24px;
+    vertical-align: middle; 
+}
+
+.Social_Links a .Social_Icon_Image {
+    width: 24px; 
+    height: 24px;
+    vertical-align: middle; 
+    transition: filter 0.15s ease-in-out; /* Match transition for hover */
+    /* Filter to change a black icon to the target gray */
+    filter: invert(39%) sepia(19%) saturate(1067%) hue-rotate(190deg) brightness(97%) contrast(85%);
+}
+
+.Social_Links a:hover {
+    color: rgb(59, 130, 246); 
+}
+
+.Social_Links a:hover .Social_Icon_Image {
+    /* Filter to change the icon to the target blue */
+    filter: invert(41%) sepia(91%) saturate(2257%) hue-rotate(210deg) brightness(97%) contrast(97%);
 }
