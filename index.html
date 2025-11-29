@@ -29,15 +29,34 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     </head>
+    
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+    </script>
+
     <body>
         <!--NavBar-->
         <nav class="Navbar">
-            <div class="Navbar_Links">
-                <a href="#Home">Home</a> <a href="#About">About</a>
-                <a href="#Skills">Skills</a>
-                <a href="#Projects">Projects</a>
-                <a href="#Contact">Contact</a>
+            <div class="Navbar">
+                <!-- This is the new 3-line button -->
+                <div class="Hamburger_Menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="Navbar_Links" id="navLinks">
+                    <a href="#Home">Home</a> 
+                    <a href="#About">About</a>
+                    <a href="#Skills">Skills</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Contact">Contact</a>
+                </ul>
             </div>
+
         </nav>
 
         <!--Intro Block-->

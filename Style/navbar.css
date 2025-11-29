@@ -37,22 +37,72 @@
     color: rgb(59, 130, 246); 
 }
 
-/* Responsive adjustment for mobile */
+/* Hamburger Menu Button - Hidden by default on Desktop */
+.Hamburger_Menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    padding-right: 20px; /* Push it slightly away from the edge */
+    z-index: 1100; /* Ensure it's above the menu */
+}
+
+.Hamburger_Menu span {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(30, 41, 59);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
     .Navbar {
-        height: auto; /* Allow it to grow */
-        justify-content: center; /* Center links */
-        padding: 10px 0;
+        justify-content: space-between; /* Push button to the right */
+        align-items: center;
+        padding: 15px 0; /* Adjust padding */
     }
 
-    .Navbar_Links {
-        margin-right: 0; /* Remove right margin */
-        gap: 20px; /* Reduce gap between links */
-        justify-content: center;
-        flex-wrap: wrap; /* Allow links to wrap if screen is very small */
+    /* Show the hamburger button on mobile */
+    .Hamburger_Menu {
+        display: flex;
+        margin-left: auto; /* Force it to the right side */
     }
-    
+
+    /* Transform the horizontal links into a vertical sidebar */
+    .Navbar_Links {
+        position: fixed;
+        top: 0;
+        right: -250px; /* Start off-screen to the right */
+        height: 100vh;
+        width: 250px;
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+
+        transform: translateX(100%);
+        visibility: hidden;
+        box-shadow: none;
+        
+        flex-direction: column; /* Stack links vertically */
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 80px; /* Space for the close button area */
+        gap: 40px;
+        z-index: 1000;
+        
+        transition: transform 0.3s ease-in-out, visibility 0s linear 0.3s;
+    }
+
+    /* The class added by JavaScript to slide it in */
+    .Navbar_Links.active {
+        right: -30px;
+        transform: translateX(0);
+        visibility: visible;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, visibility 0s linear 0s;
+    }
+
     .Navbar_Links a {
-        padding: 10px 5px; /* Add hit area for fingers */
+        font-size: 20px; /* Larger text for mobile */
     }
 }
