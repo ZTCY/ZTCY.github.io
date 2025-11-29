@@ -1,0 +1,103 @@
+.About_Section {
+    background-color: #ffffff; 
+    padding: 50px 32px; /* Vertical padding */
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.About_Section h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: rgb(30, 41, 59);
+    margin-bottom: 30px;
+}
+
+/* Main 2-Column Grid */
+.About_Grid_Main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Left Content Block */
+.About_Content p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: oklch(0.446 0.03 256.802); 
+}
+
+/* Right Image Block */
+.About_Image img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+}
+
+/* Inner 3-Block Grid (Qualities) */
+.About_Qualities {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); /* Three equal columns */
+    gap: 10px;
+    margin-top: 32px;
+}
+
+.Quality_Block {
+    display: grid;
+    grid-template-columns: 0.1fr 0.9fr; 
+    text-align: left;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.Quality_Block img {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    filter: brightness(0) saturate(100%) invert(32%) sepia(84%) saturate(6406%) hue-rotate(223deg) brightness(104%) contrast(98%);
+}
+
+.Quality_Detail {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3px;
+    display: inline-block;
+}
+
+.Quality_Detail h6{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(30, 41, 59);
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.Quality_Detail p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(100, 116, 139);
+    margin: 0;
+}
+
+/* Responsive adjustment for mobile (1 column) */
+@media (max-width: 768px) {
+    .About_Grid_Main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .About_Image {
+        order: -1; /* Move image to top on mobile */
+    }
+    .About_Qualities {
+        grid-template-columns: 1fr;
+    }
+}
