@@ -2,7 +2,8 @@
     background-color: #ffffff;
     padding: 50px 32px;
     min-height: 30vh;
-    min-width: 100vh;
+    width: 100%; /* CHANGE THIS from min-width: 100vh */
+    box-sizing: border-box;
 }
 
 .Contact_Section h2 {
@@ -88,3 +89,23 @@
     color: #64748b;
 }
 
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+    .Contact_Section {
+        padding: 50px 20px; /* Reduce padding on mobile */
+    }
+
+    .Contact_Section h2 {
+        font-size: 32px; /* Smaller title */
+    }
+
+    .Detail_Grid {
+        grid-template-columns: 1fr; /* Stack columns */
+        gap: 30px;
+    }
+
+    .Detail_Block {
+        flex-direction: row; /* Keep icon next to text */
+        align-items: flex-start;
+    }
+}

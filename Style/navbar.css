@@ -36,3 +36,23 @@
 .Navbar_Links a:hover {
     color: rgb(59, 130, 246); 
 }
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+    .Navbar {
+        height: auto; /* Allow it to grow */
+        justify-content: center; /* Center links */
+        padding: 10px 0;
+    }
+
+    .Navbar_Links {
+        margin-right: 0; /* Remove right margin */
+        gap: 20px; /* Reduce gap between links */
+        justify-content: center;
+        flex-wrap: wrap; /* Allow links to wrap if screen is very small */
+    }
+    
+    .Navbar_Links a {
+        padding: 10px 5px; /* Add hit area for fingers */
+    }
+}
