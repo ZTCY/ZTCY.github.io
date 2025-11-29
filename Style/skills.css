@@ -1,0 +1,69 @@
+.Skills_Section {
+    background-color: oklch(0.985 0.002 247.839); 
+    padding: 50px 32px;
+    min-height: 65vh;
+    min-width: 100vh;
+}
+
+.Skills_Section h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: rgb(30, 41, 59);
+    margin-bottom: 60px;
+}
+
+/* Main 4-Box Grid */
+.Skills_Grid_Main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.Skill_Box {
+    background-color: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: 12px;
+    padding: 32px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+
+.Skill_Title {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(59, 130, 246); 
+    margin: 0;
+}
+
+
+.Skill_Examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-self: flex-start;
+}
+
+.Example_Tag {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f1f5f9;
+    color: rgb(100, 116, 139); 
+    border: 1px solid #e2e8f0; 
+    padding: 4px 12px;
+    border-radius: 6px;
+    white-space: nowrap; /* Prevents tags from breaking lines */
+    align-content: flex-start;
+}
+
+/* Responsive adjustment for mobile (1 column) */
+@media (max-width: 768px) {
+    .Skills_Grid_Main {
+        grid-template-columns: 1fr;
+    }
+}
