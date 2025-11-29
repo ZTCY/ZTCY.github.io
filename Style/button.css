@@ -13,9 +13,12 @@
     transition-duration: 0.15s;
     border-radius: 8px;
     margin-right: 3px;
+    text-decoration: none;
 }
+
 .View_My_Work:hover{
     background-color: rgba(59, 130, 246, 0.8);
+    cursor: pointer;
 }
 
 .Get_In_Touch{
@@ -34,10 +37,12 @@
     transition-duration: 0.15s;
     border-radius: 8px;
     margin-left: 3px;
+    text-decoration: none;
 }
 
 .Get_In_Touch:hover{
     background-color: rgba(230, 230, 230, 0.8);
+    cursor: pointer;
 }
 
 /* Social Icon Styles */

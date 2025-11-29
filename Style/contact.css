@@ -1,0 +1,89 @@
+.Contact_Section {
+    background-color: #ffffff;
+    padding: 50px 32px;
+    min-height: 30vh;
+    min-width: 100vh;
+}
+
+.Contact_Section h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: rgb(30, 41, 59);
+    margin-bottom: 60px;
+}
+
+/* Main Grid */
+.Contact_Grid_Main {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: flex-start; 
+}
+
+
+/* Info Block */
+
+.Contact_Info h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(30, 41, 59);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.Contact_Info p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+/* Grid for detailed contact points */
+.Detail_Grid {
+    display: grid;
+    gap: 20px;
+}
+
+.Detail_Block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Detail_Icon_Wrapper {
+    /* Styles for the blue circular icon background */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(59, 130, 246, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Detail_Icon_Wrapper svg {
+    width: 20px;
+    height: 20px;
+    color: rgb(59, 130, 246); /* Blue icon color */
+    fill: none; 
+}
+
+.Detail_Text strong {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(30, 41, 59);
+    display: block; /* Ensure it takes up its own line */
+}
+
+.Detail_Text span {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #64748b;
+}
+
