@@ -1,0 +1,94 @@
+.Footer_Section {
+    background-color: rgb(30, 41, 59); 
+    color: #f1f5f9; 
+    padding: 60px 16px 20px 16px; 
+    text-align: center;
+}
+
+.Footer_Content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.Footer_Header {
+    display: flex;
+    justify-content: space-between; /* Spreads name/title and icons */
+    align-items: center;
+    border-bottom: 1px solid rgba(241, 245, 249, 0.2); /* Light separator line */
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+/* Left side of the footer header (Name and Title) */
+.Footer_Identity h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Right side of the footer header (Social Icons) */
+.Footer_Social_Links {
+    display: flex;
+    gap: 15px;
+}
+
+/* Social Icon Styles Footer */
+
+.Social_Links_Footer {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 0;
+}
+
+.Social_Links_Footer a {
+    /* Base color for inline SVGs (LinkedIn, Email) */
+    color: #ffffff; 
+    text-decoration: none;
+    transition: color 0.15s ease-in-out; 
+    cursor: pointer; 
+}
+
+/* Only affect the svg*/
+.Social_Links_Footer a svg,
+.Social_Links_Footer a .Social_Icon_Image {
+    width: 24px; 
+    height: 24px;
+    vertical-align: middle;
+}
+
+.Social_Links_Footer a .Social_Icon_Image {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle; 
+    transition: filter 0.15s ease-in-out; /* Match transition for hover */
+    filter: brightness(0) saturate(100%) invert(97%) sepia(2%) saturate(774%) hue-rotate(4deg) brightness(120%) contrast(100%);
+}
+
+.Social_Links_Footer a:hover {
+    color: rgb(59, 130, 246); 
+}
+
+.Social_Links_Footer a:hover .Social_Icon_Image {
+    /* Filter to change the icon to the target blue */
+    filter: invert(41%) sepia(91%) saturate(2257%) hue-rotate(210deg) brightness(97%) contrast(97%);
+}
+
+/* Responsive adjustment for mobile (Stacking) */
+@media (max-width: 600px) {
+    .Footer_Header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .Footer_Identity h3{
+        text-align: center;
+    }
+    .Footer_Social_Links {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+}

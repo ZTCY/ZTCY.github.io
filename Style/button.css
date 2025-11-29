@@ -77,7 +77,7 @@
     vertical-align: middle; 
     transition: filter 0.15s ease-in-out; /* Match transition for hover */
     /* Filter to change a black icon to the target gray */
-    filter: invert(39%) sepia(19%) saturate(1067%) hue-rotate(190deg) brightness(97%) contrast(85%);
+    filter: brightness(0) saturate(100%) invert(45%) sepia(11%) saturate(867%) hue-rotate(176deg) brightness(96%) contrast(88%);
 }
 
 .Social_Links a:hover {
