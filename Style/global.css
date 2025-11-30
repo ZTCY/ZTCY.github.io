@@ -1,9 +1,14 @@
+:root {
+    color-scheme: light;
+}
+
 html {
     scroll-behavior: smooth; 
 }
 
 body {
     background-color: #ffffff; 
+
     /* Apply a radial gradient for the center-glow effect */
     background-image: radial-gradient(
         circle at center,

@@ -6,6 +6,7 @@
         <meta name="description" content="Yan, Zheng Tse's personal website">
         <meta name="author" content="Zheng Tse Chi Yan">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="light">
 
         <!--Title and Icon-->
         <title>ZHENG TSE Chi Yan</title>
@@ -35,7 +36,12 @@
             const nav = document.getElementById('navLinks');
             nav.classList.toggle('active');
         }
+        function RemoveMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.remove('active');
+        }
     </script>
+
 
     <body>
         <!--NavBar-->
@@ -48,7 +54,7 @@
                     <span></span>
                 </div>
 
-                <ul class="Navbar_Links" id="navLinks">
+                <ul class="Navbar_Links" id="navLinks" onclick="RemoveMenu()">
                     <a href="#Home">Home</a> 
                     <a href="#About">About</a>
                     <a href="#Skills">Skills</a>
