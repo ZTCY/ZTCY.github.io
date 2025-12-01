@@ -1,5 +1,5 @@
 .Contact_Section {
-    background-color: #ffffff;
+    background-color: oklch(0.985 0.002 247.839);
     padding: 50px 32px;
     min-height: 30vh;
     width: 100%; /* CHANGE THIS from min-width: 100vh */

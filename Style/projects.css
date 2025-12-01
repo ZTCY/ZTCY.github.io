@@ -1,0 +1,177 @@
+.Projects_Section {
+    background-color: #ffffff;
+    padding: 50px 32px;
+    min-height: 65vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Projects_Section h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: rgb(30, 41, 59);
+    margin-bottom: 60px;
+}
+
+/* Main Grid - 3 columns */
+.Projects_Grid_Main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Project Card */
+.Project_Card {
+    background-color: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.Project_Card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(59, 130, 246, 0.15);
+}
+
+/* Project Image */
+.Project_Image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #f1f5f9;
+}
+
+.Project_Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.Project_Card:hover .Project_Image img {
+    transform: scale(1.05);
+}
+
+/* Project Content */
+.Project_Content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Project_Title {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(30, 41, 59);
+    margin: 0 0 12px 0;
+}
+
+.Project_Description {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgb(100, 116, 139);
+    margin-bottom: 16px;
+}
+
+/* Project Tags */
+.Project_Tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.Tag {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: rgba(59, 130, 246, 0.1);
+    color: rgb(59, 130, 246);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+/* Project Buttons */
+.Project_Buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.Project_Button {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: rgb(30, 41, 59);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.Project_Button:hover {
+    background-color: rgb(51, 65, 85);
+    transform: translateY(-2px);
+}
+
+.Project_Button_Demo {
+    background-color: rgb(59, 130, 246);
+}
+
+.Project_Button_Demo:hover {
+    background-color: rgb(37, 99, 235);
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+    .Projects_Grid_Main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    .Projects_Section {
+        padding: 50px 20px;
+    }
+
+    .Projects_Section h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .Projects_Grid_Main {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .Project_Image {
+        height: 180px;
+    }
+
+    .Project_Title {
+        font-size: 20px;
+    }
+
+    .Project_Description {
+        font-size: 14px;
+    }
+}
