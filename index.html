@@ -3,13 +3,50 @@
     <head>
         <!--Web SEO-->
         <meta charset="UTF-8">
-        <meta name="description" content="Yan, Zheng Tse's personal website">
+        <meta name="description" content=
+        "Portfolio of Zheng Tse Chi Yan, a Computer Science student at HKUST specializing in AI, 
+        Software Development, and Entrepreneurship. View my projects and skills.">
+        <meta name="keywords" content=
+        "Zheng Tse Chi Yan, Chi Yan Zheng Tse, Yan Zheng Tse, Yan, YanZT, HKUST, Computer Science, 
+        AI, Portfolio, NovaForge, NovaForge HK">
         <meta name="author" content="Zheng Tse Chi Yan">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="color-scheme" content="light">
+        <!--"Person" Structured Data-->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Zheng Tse Chi Yan",
+            "givenName": "Chi Yan",
+            "familyName": "Zheng Tse",
+            "additionalName": "Yan",
+            "url": "https://ztcy.github.io/", 
+            "jobTitle": [
+                "Director",
+                "Computer Science Student"
+            ],
+            "worksFor": {
+                "@type": "Organization",
+                "name": "NovaForge HK"
+            },
+            "affiliation": {
+                "@type": "EducationalOrganization",
+                "name": "The Hong Kong University of Science and Technology (HKUST)"
+            },
+            "alumniOf": "HKUST",
+            "sameAs": [
+                "https://github.com/ZTCY",
+                "https://www.linkedin.com/in/chi-yan-zheng-tse-94b821239"
+            ],
+            "description": "Zheng Tse Chi Yan is the Director of NovaForge HK and a Computer Science 
+            student at HKUST specializing in Artificial Intelligence and Software Development."
+            }
+        </script>
+
 
         <!--Title and Icon-->
-        <title>ZHENG TSE Chi Yan</title>
+        <title>Zheng Tse Chi Yan (Yan) | Computer Science Student @ HKUST | Director @ NovaForge HK</title>
         <link rel="icon" type="image/jpg" href="https://github.com/ZTCY/ZTCY.github.io/blob/main/icon.jpg?raw=true"/>
         
         <!--CSS Load-->
@@ -69,10 +106,12 @@
         <section class="Intro" id="Home">
             <h1 class="Title_Intro">
                 Hi, I'm <span class="Title_Blue_Yan">Yan</span>
+                <!--Hiden information for google SEO-->
+                <span style="display:block; font-size: 0.05em; color: #e3f2ff; margin-top: 10px;">Zheng Tse Chi Yan| Director, NovaForge HK</span>
             </h1>
             <p class="Title_Gray_Intro">
-                Passionate about exploring the latest technologies and solving problems. 
-                Currently pursuing my Bachelor's degree in Computer Science at the HKUST.
+                Passionate about exploring the latest technologies and solving problems.<br> 
+                Computer Science Student @ HKUST | Director @ NovaForge hk.
             </p>
             <div class="Intro_button">
                 <a class="View_My_Work">View My Work</a>
@@ -167,6 +206,7 @@
                     <div class="Skill_Examples">
                         <span class="Example_Tag">AI/ML Application</span>
                         <span class="Example_Tag">Software Development</span>
+                        <span class="Example_Tag">Web Development</span>
                     </div>
                 </div>
 
@@ -175,10 +215,10 @@
                     <div class="Skill_Examples">
                         <span class="Example_Tag">Git</span>
                         <span class="Example_Tag">Docker</span>
-                        <span class="Example_Tag">AWS</span>
                         <span class="Example_Tag">Linux</span>
                         <span class="Example_Tag">Figma</span>
                         <span class="Example_Tag">Canva</span>
+                        <span class="Example_Tag">Google Colab</span>
                     </div>
                 </div>
 
